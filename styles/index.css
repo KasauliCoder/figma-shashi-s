@@ -1,0 +1,261 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  
+
+}
+button{
+  cursor: pointer;
+}
+.container {
+  height: 100%;
+ 
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 40px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: white;
+}
+.logo-box img {
+  height: 70px;
+  width: 100%;
+}
+ul.main-items {
+  display: flex;
+  list-style: none;
+  gap: 60px;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+
+
+a.search-a {
+  z-index: 2;
+  position: relative; 
+}
+
+.search-input {
+  width: 20%;
+  position: absolute;
+  right: 246px;
+  height: 44px;
+  border-radius: 40px;
+  display: block;
+  opacity: 0;
+  transform: translateX(50px); /* Start from right */
+  transition: all 0.4s ease-in-out;
+  padding: 0 2rem;
+  border-color: #eb5d61;
+}
+
+.icon-box:hover .search-input {
+  opacity: 1;
+  transform: translateX(0); /* Move to original position */
+}
+
+
+
+li.items a {
+  text-decoration: none;
+  color: #272727;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+li.items a:hover {
+  color: #eb5d61;
+}
+.active-link {
+  color: #eb5d61 !important;
+}
+.nav-items-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.icon-box {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+button.call-btn {
+  padding: 10px 20px;
+  border: none;
+  background: #eb5d61;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-radius: 40px;
+  color: white;
+  font-size: 20px;
+}
+
+/* hero section */
+section.hero {
+  padding: 0px 40px;
+  margin-top: 5rem;
+  display: flex;
+  z-index: 1;
+  margin-bottom: 146px;
+  padding-top: 2rem;
+  justify-content: space-between;
+}
+.circle-box img {
+  height: 400px;
+  width: 100%;
+}
+ .circle-box{
+  position: relative;
+ }
+ 
+.bg-box {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 77px;
+  z-index: -1;
+  right: 112px;
+}
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.right-hero {
+  width: 50%;
+}
+.product-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  border-radius: 25px;
+  padding: 17px 53px 17px 25px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.product-small-img {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+
+.left-hero {
+  width: 45%;
+}
+.product-small-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+    align-items: baseline;
+}
+.product-small-info img {
+  height: 16px;
+}
+span.product-small-title {
+  font-size: 22px;
+  color: #2C2C2C;
+}
+.product-small-img img {
+  height: 62px;
+  width: 93px;
+}
+.small-product-card {
+  display: flex;
+  gap: 55px;
+}
+
+.heading-description-box h1 {
+  font-size: 62px;
+  width: 77%;
+}
+span.highlight-text {
+  color: #ff5257;
+}
+
+p.hero-description {
+  font-size: 26px;
+  color: #4A4A4A;
+  margin-top: 11px;
+  margin-bottom: 46px;
+}
+
+.order-watch-box {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+
+span.round-spn {
+  padding: 10px;
+  border-radius: 50%;
+  /* background: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+button.watch-video-btn {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+}
+span.round-spn img {
+  height: 20px;
+  width: 20px;
+}
+span.dollar-icn {
+  font-size: 18px;
+  color: #FF7979;
+}
+span.product-small-price-info {
+  font-size: 24px;
+  color: #515151;
+}
+
+.product-item:hover {
+  animation: shake 0.4s ease-in-out 1;
+  cursor: pointer;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(5px); }
+  50% { transform: translateX(-5px); }
+  75% { transform: translateX(3px); }
+  100% { transform: translateX(0); }
+}
